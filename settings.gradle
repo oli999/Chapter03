@@ -1,1 +1,1 @@
-include ':app', ':step01asynctask', ':step01example'
+include ':app', ':step01asynctask', ':step01example', ':step02json'
