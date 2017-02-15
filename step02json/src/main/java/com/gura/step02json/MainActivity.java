@@ -11,12 +11,17 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 public class MainActivity extends AppCompatActivity
                 implements View.OnClickListener,
                         Util.RequestListener{
     ListView listView;
+    MemberAdapter adapter;
+    List<MemberDto> list;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +30,10 @@ public class MainActivity extends AppCompatActivity
         listView=(ListView)findViewById(R.id.listView);
         Button getBtn=(Button)findViewById(R.id.getMemberBtn);
         getBtn.setOnClickListener(this);
+        list=new ArrayList<>();
+        adapter=new MemberAdapter(this,
+                R.layout.listview_cell, list);
+        listView.setAdapter(adapter);
     }
 
     @Override
@@ -66,12 +75,15 @@ public class MainActivity extends AppCompatActivity
                 String name=tmp.getString("name"); //이름
                 String addr=tmp.getString("addr"); //주소
                 //모델에 추가 한다.
-
+                MemberDto dto=new MemberDto(num, name, addr);
+                list.add(dto);
             }
         } catch (JSONException e) {
             Toast.makeText(this, "JSON 문서에 오류가 있습니다.",
                     Toast.LENGTH_SHORT).show();
         }
+        //아답타에 알린다.
+        adapter.notifyDataSetChanged();
     }
 }
 
