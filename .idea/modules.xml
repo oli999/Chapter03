@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/step02json/step02json.iml" filepath="$PROJECT_DIR$/step02json/step02json.iml" />
       <module fileurl="file://$PROJECT_DIR$/step03setting/step03setting.iml" filepath="$PROJECT_DIR$/step03setting/step03setting.iml" />
       <module fileurl="file://$PROJECT_DIR$/step03sharedprefence/step03sharedprefence.iml" filepath="$PROJECT_DIR$/step03sharedprefence/step03sharedprefence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/step04fileio/step04fileio.iml" filepath="$PROJECT_DIR$/step04fileio/step04fileio.iml" />
     </modules>
   </component>
 </project>

@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/step02json" />
             <option value="$PROJECT_DIR$/step03setting" />
             <option value="$PROJECT_DIR$/step03sharedprefence" />
+            <option value="$PROJECT_DIR$/step04fileio" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
