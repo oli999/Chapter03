@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gura.step03sharedprefence.SettingActivity"
+    android:orientation="vertical"
+    android:background="@drawable/d_bg1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/apply_cell"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical">
+
+                <TextView android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="이름"
+                    android:layout_marginLeft="35dp"/>
+                <EditText android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="홍길동"
+                    android:singleLine="true"
+                    android:id="@+id/name"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/apply_cell"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical">
+
+                <TextView android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="성별"
+                    android:layout_marginLeft="35dp"/>
+                <RadioGroup android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:id="@+id/sex">
+                    <RadioButton android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="남"
+                        android:checked="true"
+                        android:id="@+id/man"/>
+                    <RadioButton android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="여"
+                        android:checked="false"
+                        android:id="@+id/woman"/>
+                </RadioGroup>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/apply_cell"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical">
+
+                <TextView android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="이메일"
+                    android:layout_marginLeft="35dp"/>
+                <EditText android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="myemail@emailAddr.com"
+                    android:singleLine="true"
+                    android:id="@+id/email"
+                    android:inputType="textEmailAddress"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/apply_cell"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical">
+
+                <TextView android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="핸드폰"
+                    android:layout_marginLeft="35dp"/>
+                <EditText android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="010-111-1234"
+                    android:singleLine="true"
+                    android:id="@+id/phoneNumber"
+                    android:inputType="phone"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/apply_cell"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical">
+
+                <TextView android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="비밀번호"
+                    android:layout_marginLeft="35dp"/>
+                <EditText android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:id="@+id/password"
+                    android:inputType="textPassword"/>
+
+            </LinearLayout>
+            <Button android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="저장 ( SAVE )"
+                android:gravity="center"
+                android:background="#f5475b"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:onClick="save"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
+
+
+
+
+
+

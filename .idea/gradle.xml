@@ -13,6 +13,8 @@
             <option value="$PROJECT_DIR$/step01asynctask" />
             <option value="$PROJECT_DIR$/step01example" />
             <option value="$PROJECT_DIR$/step02json" />
+            <option value="$PROJECT_DIR$/step03setting" />
+            <option value="$PROJECT_DIR$/step03sharedprefence" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

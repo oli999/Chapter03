@@ -7,6 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/step01asynctask/step01asynctask.iml" filepath="$PROJECT_DIR$/step01asynctask/step01asynctask.iml" />
       <module fileurl="file://$PROJECT_DIR$/step01example/step01example.iml" filepath="$PROJECT_DIR$/step01example/step01example.iml" />
       <module fileurl="file://$PROJECT_DIR$/step02json/step02json.iml" filepath="$PROJECT_DIR$/step02json/step02json.iml" />
+      <module fileurl="file://$PROJECT_DIR$/step03setting/step03setting.iml" filepath="$PROJECT_DIR$/step03setting/step03setting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/step03sharedprefence/step03sharedprefence.iml" filepath="$PROJECT_DIR$/step03sharedprefence/step03sharedprefence.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Step03SharedPrefence</string>
+    <string name="action_settings">Settings</string>
+</resources>
