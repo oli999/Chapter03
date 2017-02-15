@@ -1,10 +1,12 @@
 package com.gura.step02json;
 
+import java.io.Serializable;
+
 /**
  * Created by user on 2017-02-15.
  */
 
-public class MemberDto {
+public class MemberDto implements Serializable{
     private int num;
     private String name;
     private String addr;

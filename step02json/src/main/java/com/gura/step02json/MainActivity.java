@@ -1,8 +1,10 @@
 package com.gura.step02json;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -16,8 +18,9 @@ import java.util.List;
 import java.util.Map;
 
 public class MainActivity extends AppCompatActivity
-                implements View.OnClickListener,
-                        Util.RequestListener{
+        implements View.OnClickListener,
+            Util.RequestListener,
+            AdapterView.OnItemClickListener{
     ListView listView;
     MemberAdapter adapter;
     List<MemberDto> list;
@@ -34,6 +37,8 @@ public class MainActivity extends AppCompatActivity
         adapter=new MemberAdapter(this,
                 R.layout.listview_cell, list);
         listView.setAdapter(adapter);
+        //ListView 에 아이템 클릭 리스너 등록하기
+        listView.setOnItemClickListener(this);
     }
 
     @Override
@@ -84,6 +89,15 @@ public class MainActivity extends AppCompatActivity
         }
         //아답타에 알린다.
         adapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        Intent intent=new Intent(this, DetailActivity.class);
+        //인텐트 객체에 MemberDto 객체를 담는다.
+        intent.putExtra("dto", list.get(position));
+        //액티비티 시작 시키기
+        startActivity(intent);
     }
 }
 
