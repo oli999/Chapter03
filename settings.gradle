@@ -1,1 +1,1 @@
-include ':app', ':step01asynctask', ':step01example', ':step02json', ':step03setting', ':step03sharedprefence', ':step04fileio'
+include ':app', ':step01asynctask', ':step01example', ':step02json', ':step03setting', ':step03sharedprefence', ':step04fileio', ':step05sqlite'

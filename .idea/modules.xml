@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/step03setting/step03setting.iml" filepath="$PROJECT_DIR$/step03setting/step03setting.iml" />
       <module fileurl="file://$PROJECT_DIR$/step03sharedprefence/step03sharedprefence.iml" filepath="$PROJECT_DIR$/step03sharedprefence/step03sharedprefence.iml" />
       <module fileurl="file://$PROJECT_DIR$/step04fileio/step04fileio.iml" filepath="$PROJECT_DIR$/step04fileio/step04fileio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/step05sqlite/step05sqlite.iml" filepath="$PROJECT_DIR$/step05sqlite/step05sqlite.iml" />
     </modules>
   </component>
 </project>
